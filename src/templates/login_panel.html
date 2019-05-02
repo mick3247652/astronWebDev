@@ -9,13 +9,13 @@
         {[ } else { ]}
             {[ if (o.authentication == o.LOGIN || o.authentication == o.EXTERNAL) { ]}
                 <div class="form-group">
-                    <label for="converse-login-jid">{{{o.__("LOGIN:")}}}</label>
-                    <input id="converse-login-jid" class="form-control" autofocus required="required" type="text" name="jid" placeholder="{{{o.placeholder_username}}}"/>
+                    <label for="converse-login-jid">{{{o.__("Имя пользователя:")}}}</label>
+                    <input id="converse-login-jid" class="form-control" autofocus required="required" type="text" name="jid" placeholder="имя пользователя"/>
                 </div>
                 {[ if (o.authentication !== o.EXTERNAL) { ]}
                 <div class="form-group">
-                    <label for="converse-login-password">{{{o.__("Password:")}}}</label>
-                    <input id="converse-login-password" class="form-control" required="required" type="password" name="password" placeholder="{{{o.__('password')}}}"/>
+                    <label for="converse-login-password">{{{o.__("Пароль:")}}}</label>
+                    <input id="converse-login-password" class="form-control" required="required" type="password" name="password" placeholder="пароль"/>
                 </div>
                 {[ } ]}
                 {[ if (o.show_trust_checkbox) { ]}
